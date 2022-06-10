@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <title>Calculadora Cuotas</title>
+</head>
+<body>
+<div class = "container">
+    <div class="row">
+        <div class="col-md-12">
+            <h1>Calculadora de Cuotas</h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <form action="#" id="calculadoraDeCuotas">
+                <div class="form-group">
+                    <label for="monto">Monto</label>
+                    <input type="number" class="form-control" id="monto" name="monto" placeholder="Monto">
+                </div>
+                <label for = "medioPago">Medio de Pago</label>
+                <select class="form-select"  id="medioPago">
+                    <option selected value="default" disabled>Seleccione una Tarjeta</option>
+                    <option value="Platino">Platino(5%)</option>
+                    <option value="Intermedia">Intermedia(10%)</option>
+                    <option value="Black">Black(15%)</option>
+                </select>
+                <div class="form-group">
+                    <label for="cuotas">Cuotas</label>
+                    <input type="number" class="form-control" id="cuotas" name="cuotas" placeholder="Cuotas">
+                </div>
+                <div id="resultado"></div>
+                <button type="submit" class="btn btn-primary" onclick="operacionFinanciera()">Calcular</button>
+            </form>
+        </div>
+    </div>
+</div>
+<script src="js/tcfunctions.js"></script>
+</body>
+
+</html>
